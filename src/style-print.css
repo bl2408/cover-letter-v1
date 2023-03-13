@@ -1,0 +1,52 @@
+:root {
+	-webkit-print-color-adjust: exact !important;
+	print-color-adjust: exact !important;
+}
+
+@page {
+	size: A4;
+	margin: 0mm;
+}
+
+@media print {
+    :root{
+        --pad-right: 10mm;
+        --pad-left: 10mm;
+
+        --hei-header: 160pt;
+        --grid-columns-main: 15mm 195mm;
+
+        --border-size-high: 1pt;
+		--border-col-high: var(--col-high-3);
+
+        --font-size-header: 33pt;
+        --font-size-social-item:  8.5pt;
+        --font-size-header-p: 12.5pt;
+        
+        font-size: 8pt;
+        letter-spacing: 1pt;
+    }
+	html,
+	body {
+		width: 210mm;
+		height: 297mm;
+		padding: 0;
+		display: initial;
+	}
+    main{
+        width: 100vw;
+        height: 100svh;
+        padding: 0 var(--pad-right) 0 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: var(--grid-columns-main);
+        grid-template-rows: max-content auto;
+    }
+    nav{
+        display: none;
+    }
+    .page-break{
+        display: block;
+        page-break-before: always;
+    }
+}
