@@ -1,6 +1,11 @@
 import "./style.css"
 import "./style-print.css"
 import { itemSocials } from "./content/items";
+import { BODY } from "./content/body";
+
+import { v4 as uuid } from 'uuid';
+import { COMPANY } from "./content/company";
+import { DATE } from "./content/date";
 
 
 export default function CoverLetter(){
@@ -27,17 +32,37 @@ export default function CoverLetter(){
                 </div>
             </header>
             <section>
-                <div className="company">
-                    <p>Date</p>
-                    <p>COMPANY NAME</p>
-                    <p>Address 1</p>
-                    <p>Address 2</p>
+                <div></div>
+                <div className="date">
+                    <p>
+                        { DATE }
+                    </p>
+                    
                 </div>
-                <h2>Dear ________________,</h2>
+                <div className="company">
+                    {
+                        COMPANY.map(item=><p key={uuid()} >{item}</p>)
+                    }
+                </div>
+                <div></div>
+                <h2>Dear Hiring team,</h2>
                 <article>
-                    <p></p>
+                    {
+                        BODY.map(item=><p key={uuid()}>{item}</p>)
+                    }
+                    
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    
+                    <p>
+                        Sincerely,<br />
+                        Brian Lambert
+                    </p>
                 </article>
-                <div className='page-break'></div>
+                {/* <div className='page-break'></div> */}
+                
             </section>
         </main>
 

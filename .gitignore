@@ -25,3 +25,6 @@ dist-ssr
 
 
 content.md
+body.js
+company.js
+date.js

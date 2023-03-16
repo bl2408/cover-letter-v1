@@ -12,7 +12,7 @@
 	--border-size-high-li: 1px;
 	--border-col-high-li: var(--col-high-3);
 
-	--pad-right: 2em;
+	--pad-right: 3em;
 
 	--hei-header: 270px;
 
@@ -119,6 +119,12 @@ main > header > .tagline{
 	padding-top: 1em;
 }
 
+section > .company{
+	display: flex;
+	flex-direction: column;
+	gap: 0.5em;
+}
+
 .item-grid{
 	display: grid;
 	grid-template-columns: max-content max-content;
@@ -142,7 +148,7 @@ main > section > * {
 }
 
 article p{
-	padding-bottom: 1.5em;	
+	padding-bottom: 2.5em;	
 	padding-left: 1.2em;
 }
 

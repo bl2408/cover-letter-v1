@@ -3,7 +3,8 @@ import { faAt, faGlobe, faLocationDot, faPhone } from '@fortawesome/free-solid-s
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 export const itemSocials = [
-    { icon: <FontAwesomeIcon icon={faAt}/>, label: "hi@brianlambert.dev", to: "mailto:hi@brianlambert.dev" },
+    { icon: <FontAwesomeIcon icon={faAt}/>, label: "brianlambert2408@gmail.com", to: "mailto:brianlambert2408@gmail.com" },
+    // { icon: <FontAwesomeIcon icon={faAt}/>, label: "hi@brianlambert.dev", to: "mailto:hi@brianlambert.dev" },
     { icon: <FontAwesomeIcon icon={faPhone}/>, label: "0430 538 384", to: "tel:0430538384" },
     { icon: <FontAwesomeIcon icon={faLocationDot}/>, label: "Melbourne, Vic" },
     { icon: <FontAwesomeIcon icon={faGlobe}/>, label: "brianlambert.dev", to: "https://www.brianlambert.dev" },

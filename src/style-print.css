@@ -10,7 +10,7 @@
 
 @media print {
     :root{
-        --pad-right: 10mm;
+        --pad-right: 15mm;
         --pad-left: 10mm;
 
         --hei-header: 160pt;
